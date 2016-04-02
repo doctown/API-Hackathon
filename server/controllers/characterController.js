@@ -57,8 +57,7 @@ exports.deleteAll = function(req, res) {
     if (err) {
       res.sendStatus(500);
     } else {
-      var totalCharacters = characters.length + ' ' || '';
-      res.send('All ' + totalCharacters + 'characters have been deleted');
+      res.send('All characters have been deleted');
     }
   });
 };
