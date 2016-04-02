@@ -522,3 +522,5 @@ var gameOfThronesData = [
     "imageUrl": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/ygritte-512x512.jpg"
   }
 ]
+
+module.exports.data = gameOfThronesData;
