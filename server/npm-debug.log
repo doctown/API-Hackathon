@@ -1,0 +1,1080 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'postman',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.12
+3 info using node@v5.8.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'postman', null ]
+7 verbose cache add spec postman
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'postman',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'postman',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed postman@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for postman
+11 info addNameTag [ 'postman', 'latest' ]
+12 silly mapToRegistry name postman
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/postman
+16 verbose addNameTag registry:https://registry.npmjs.org/postman not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/postman
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 8:50:36 PM
+20 verbose request id 1012f3fe732104a5
+21 http request GET https://registry.npmjs.org/postman
+22 http 200 https://registry.npmjs.org/postman
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"7H6Z0OTYNCX4EGGJYKW4KHSBU"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'content-length': '2001',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Sat, 02 Apr 2016 03:50:36 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-lax1434-LAX',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1459569036.793933,VS0,VE91',
+23 verbose headers   vary: 'Accept' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"7H6Z0OTYNCX4EGGJYKW4KHSBU"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '2001',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Sat, 02 Apr 2016 03:50:36 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-lax1434-LAX',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1459569036.793933,VS0,VE91',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving postman to /Users/nundy/.npm/registry.npmjs.org/postman/.cache.json
+26 silly addNameTag next cb for postman with tag latest
+27 silly addNamed postman@0.2.0
+28 verbose addNamed "0.2.0" is a plain semver version for postman
+29 silly mapToRegistry name postman
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/postman
+33 verbose addRemoteTarball https://registry.npmjs.org/postman/-/postman-0.2.0.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/postman/-/postman-0.2.0.tgz',
+34 verbose addRemoteTarball   '73cb3634336d6cf37b976826561204157501e04e' ]
+35 info retry fetch attempt 1 at 8:50:36 PM
+36 info attempt registry request try #1 at 8:50:36 PM
+37 http fetch GET https://registry.npmjs.org/postman/-/postman-0.2.0.tgz
+38 http fetch 200 https://registry.npmjs.org/postman/-/postman-0.2.0.tgz
+39 silly fetchAndShaCheck shasum 73cb3634336d6cf37b976826561204157501e04e
+40 verbose addTmpTarball /var/folders/3k/_wbndb4s69x4bplstx8mbpp40000gn/T/npm-54439-f5f29154/registry.npmjs.org/postman/-/postman-0.2.0.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for postman@0.2.0
+42 silly cache afterAdd postman@0.2.0
+43 verbose afterAdd /Users/nundy/.npm/postman/0.2.0/package/package.json not in flight; writing
+44 verbose afterAdd /Users/nundy/.npm/postman/0.2.0/package/package.json written
+45 silly install resolved [ { name: 'postman',
+45 silly install resolved     version: '0.2.0',
+45 silly install resolved     description: 'The Postman will help deliver messages around your application',
+45 silly install resolved     keywords: [ 'pub/sub', 'eventing', 'message-bus' ],
+45 silly install resolved     author: { name: 'Aaron Powell http://apowell.me' },
+45 silly install resolved     contributers: [ 'Aaron Powell http://apowell.me' ],
+45 silly install resolved     licenses: [ [Object] ],
+45 silly install resolved     repositories: [ [Object] ],
+45 silly install resolved     engines: [ 'node' ],
+45 silly install resolved     main: './lib/index.js',
+45 silly install resolved     directories: { lib: './lib' },
+45 silly install resolved     dependencies: {},
+45 silly install resolved     devDependencies: {},
+45 silly install resolved     _id: 'postman@0.2.0',
+45 silly install resolved     _engineSupported: true,
+45 silly install resolved     _npmVersion: '1.0.6',
+45 silly install resolved     _nodeVersion: 'v0.5.2-pre',
+45 silly install resolved     _defaultsLoaded: true,
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '73cb3634336d6cf37b976826561204157501e04e',
+45 silly install resolved        tarball: 'https://registry.npmjs.org/postman/-/postman-0.2.0.tgz' },
+45 silly install resolved     scripts: {},
+45 silly install resolved     _shasum: '73cb3634336d6cf37b976826561204157501e04e',
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/postman/-/postman-0.2.0.tgz',
+45 silly install resolved     _from: 'postman@latest' } ]
+46 info install postman@0.2.0 into /usr/local/lib
+47 info installOne postman@0.2.0
+48 verbose installOne of postman to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/nundy/.npm/_locks/postman-18fd0fe1a9b28de7.lock for /usr/local/lib/node_modules/postman
+50 silly install write writing postman 0.2.0 to /usr/local/lib/node_modules/postman
+51 verbose unbuild lib/node_modules/postman
+52 silly gentlyRm /usr/local/lib/node_modules/postman is being purged from base /usr/local
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/postman
+54 verbose tar unpack /Users/nundy/.npm/postman/0.2.0/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/postman
+56 silly gentlyRm /usr/local/lib/node_modules/postman is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/postman
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry .npmignore
+60 silly gunzTarPerm extractEntry Cakefile
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry readme.md
+63 silly gunzTarPerm extractEntry License.txt
+64 silly gunzTarPerm extractEntry assets/Logo.png
+65 silly gunzTarPerm extractEntry lib/postman.js
+66 silly gunzTarPerm extractEntry lib/index.js
+67 silly gunzTarPerm extractEntry src/index.coffee
+68 silly gunzTarPerm extractEntry src/postman.coffee
+69 silly gunzTarPerm extractEntry node_modules/colors/example.js
+70 silly gunzTarPerm extractEntry node_modules/colors/example.html
+71 silly gunzTarPerm extractEntry node_modules/colors/MIT-LICENSE.txt
+72 silly gunzTarPerm extractEntry node_modules/colors/colors.js
+73 silly gunzTarPerm extractEntry node_modules/colors/package.json
+74 silly gunzTarPerm extractEntry node_modules/colors/ReadMe.md
+75 silly gunzTarPerm extractEntry node_modules/coffee-script/.npmignore
+76 silly gunzTarPerm extractEntry node_modules/coffee-script/LICENSE
+77 silly gunzTarPerm extractEntry node_modules/coffee-script/Rakefile
+78 silly gunzTarPerm extractEntry node_modules/coffee-script/package.json
+79 silly gunzTarPerm extractEntry node_modules/coffee-script/README
+80 silly gunzTarPerm extractEntry node_modules/coffee-script/bin/cake
+81 silly gunzTarPerm extractEntry node_modules/coffee-script/bin/coffee
+82 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/cake.js
+83 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/command.js
+84 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/grammar.js
+85 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/index.js
+86 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/helpers.js
+87 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/browser.js
+88 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/lexer.js
+89 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/nodes.js
+90 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/repl.js
+91 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/optparse.js
+92 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/rewriter.js
+93 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/scope.js
+94 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/parser.js
+95 silly gunzTarPerm extractEntry node_modules/coffee-script/lib/coffee-script.js
+96 silly gunzTarPerm extractEntry node_modules/uglify-js/.gitignore
+97 silly gunzTarPerm extractEntry node_modules/uglify-js/docstyle.css
+98 silly gunzTarPerm extractEntry node_modules/uglify-js/package.json
+99 silly gunzTarPerm extractEntry node_modules/uglify-js/README.html
+100 silly gunzTarPerm extractEntry node_modules/uglify-js/README.org
+101 silly gunzTarPerm extractEntry node_modules/uglify-js/uglify-js.js
+102 silly gunzTarPerm extractEntry node_modules/uglify-js/bin/uglifyjs
+103 silly gunzTarPerm extractEntry node_modules/uglify-js/lib/process.js
+104 silly gunzTarPerm extractEntry node_modules/uglify-js/lib/squeeze-more.js
+105 silly gunzTarPerm extractEntry node_modules/uglify-js/lib/parse-js.js
+106 silly gunzTarPerm extractEntry node_modules/uglify-js/tmp/instrument2.js
+107 silly gunzTarPerm extractEntry node_modules/uglify-js/tmp/instrument.js
+108 silly gunzTarPerm extractEntry node_modules/uglify-js/test/testparser.js
+109 silly gunzTarPerm extractEntry node_modules/uglify-js/test/beautify.js
+110 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/scripts.js
+111 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/array1.js
+112 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/array2.js
+113 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/array3.js
+114 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/array4.js
+115 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/assignment.js
+116 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/concatstring.js
+117 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/const.js
+118 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/empty-blocks.js
+119 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/forstatement.js
+120 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/if.js
+121 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/ifreturn2.js
+122 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue10.js
+123 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue11.js
+124 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue13.js
+125 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue14.js
+126 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue16.js
+127 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue17.js
+128 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue20.js
+129 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue25.js
+130 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue27.js
+131 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/ifreturn.js
+132 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue29.js
+133 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue28.js
+134 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue30.js
+135 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue4.js
+136 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue21.js
+137 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue48.js
+138 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue50.js
+139 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue34.js
+140 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue54.1.js
+141 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue69.js
+142 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue9.js
+143 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/mangle.js
+144 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue53.js
+145 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/issue68.js
+146 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/strict-equals.js
+147 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/var.js
+148 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/test/with.js
+149 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/array1.js
+150 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/array4.js
+151 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/array2.js
+152 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/assignment.js
+153 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/concatstring.js
+154 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/forstatement.js
+155 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/const.js
+156 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/array3.js
+157 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/if.js
+158 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js
+159 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/ifreturn.js
+160 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue10.js
+161 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js
+162 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue13.js
+163 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue14.js
+164 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue16.js
+165 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue17.js
+166 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue11.js
+167 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue21.js
+168 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue20.js
+169 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue27.js
+170 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue25.js
+171 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue28.js
+172 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue34.js
+173 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue4.js
+174 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue48.js
+175 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue30.js
+176 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue50.js
+177 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue53.js
+178 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue54.1.js
+179 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue69.js
+180 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue68.js
+181 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/mangle.js
+182 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue29.js
+183 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/strict-equals.js
+184 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/var.js
+185 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/issue9.js
+186 silly gunzTarPerm extractEntry node_modules/uglify-js/test/unit/compress/expected/with.js
+187 silly gunzTarPerm extractEntry node_modules/qunit/.gitignore
+188 silly gunzTarPerm extractEntry node_modules/qunit/.gitmodules
+189 silly gunzTarPerm extractEntry node_modules/qunit/index.js
+190 silly gunzTarPerm extractEntry node_modules/qunit/Makefile
+191 silly gunzTarPerm extractEntry node_modules/qunit/package.json
+192 silly gunzTarPerm extractEntry node_modules/qunit/readme.md
+193 silly gunzTarPerm extractEntry node_modules/qunit/lib/api.js
+194 silly gunzTarPerm extractEntry node_modules/qunit/lib/bootstrap.js
+195 silly gunzTarPerm extractEntry node_modules/qunit/lib/coverage.js
+196 silly gunzTarPerm extractEntry node_modules/qunit/lib/qunit.js
+197 silly gunzTarPerm extractEntry node_modules/qunit/bin/cli.js
+198 silly gunzTarPerm extractEntry node_modules/qunit/test/api.js
+199 silly gunzTarPerm extractEntry node_modules/qunit/test/same.js
+200 silly gunzTarPerm extractEntry node_modules/qunit/test/cli.js
+201 silly gunzTarPerm extractEntry node_modules/qunit/test/testrunner.js
+202 silly gunzTarPerm extractEntry node_modules/qunit/test/filedeps/global.js
+203 silly gunzTarPerm extractEntry node_modules/qunit/test/filedeps/namespace.js
+204 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/aclocal.m4
+205 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/config.h
+206 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/config.h.in
+207 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/config.log
+208 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/config.rpath
+209 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/config.status
+210 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/config.sub
+211 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/configure
+212 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/configure.ac
+213 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/COPYING
+214 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/depcomp
+215 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/encoding.h
+216 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/generate-resources.c
+217 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/encoding.c
+218 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/encoding.o
+219 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/generate-resources.exe
+220 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/global.h
+221 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/generate-resources.o
+222 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/highlight.c
+223 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/highlight.o
+224 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/highlight.h
+225 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-connection.c
+226 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-connection.o
+227 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-exchange.c
+228 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-exchange.o
+229 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-host.c
+230 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-host.o
+231 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-message.c
+232 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-message.o
+233 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-server.h
+234 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-server.o
+235 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-server.c
+236 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-url.o
+237 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/http-url.c
+238 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/instrument-js.cpp
+239 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/install-sh
+240 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/instrument-js.h
+241 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/instrument-js.o
+242 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/instrument.c
+243 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/instrument.h
+244 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/config.guess
+245 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-help.txt
+246 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-highlight.css
+247 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-ie.css
+248 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-overlay.js
+249 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-server-help.txt
+250 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-server.1
+251 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/instrument.o
+252 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-server.c
+253 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-server.o
+254 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-throbber.gif
+255 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.1
+256 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage-server.exe
+257 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.exe
+258 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.css
+259 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.html
+260 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.js
+261 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.jsm
+262 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.manifest
+263 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.o
+264 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.xul
+265 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/make-bin-dist.sh.in
+266 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/make-bin-dist.sh
+267 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/make-dist.sh
+268 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/make-dist.sh.in
+269 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/Makefile
+270 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/Makefile.am
+271 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/jscoverage.c
+272 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/Makefile.in
+273 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/missing
+274 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/report.js
+275 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/Readme.md
+276 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/resource-manager.c
+277 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/resource-manager.h
+278 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/resources.c
+279 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/stamp-h1
+280 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/stream.c
+281 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/stream.h
+282 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/stream.o
+283 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/util.h
+284 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/util.c
+285 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/util.o
+286 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/resource-manager.o
+287 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/encoding.Po
+288 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/generate-resources.Po
+289 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/http-connection.Po
+290 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/highlight.Po
+291 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/http-host.Po
+292 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/http-message.Po
+293 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/http-server.Po
+294 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/http-url.Po
+295 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/instrument-js.Po
+296 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/jscoverage-server.Po
+297 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/instrument.Po
+298 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/jscoverage.Po
+299 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/stream.Po
+300 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/resource-manager.Po
+301 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/http-exchange.Po
+302 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/.deps/util.Po
+303 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/m4/lib-ld.m4
+304 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/m4/iconv.m4
+305 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/m4/lib-prefix.m4
+306 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/m4/lib-link.m4
+307 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/builtins.tbl
+308 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config.mk
+309 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/dtoa.c
+310 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/aclocal.m4
+311 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/bench.sh
+312 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jitstats.tbl
+313 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/js-config.h.in
+314 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/js-config.in
+315 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/javascript-trace.d
+316 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/js.cpp
+317 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/js.msg
+318 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/js3240.rc
+319 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsapi.h
+320 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsapi.cpp
+321 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsarena.h
+322 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsarena.cpp
+323 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsarray.h
+324 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/GNUmakefile
+325 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsatom.h
+326 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsbit.h
+327 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsarray.cpp
+328 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsbool.cpp
+329 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsbuiltins.h
+330 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsbuiltins.cpp
+331 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsatom.cpp
+332 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsclist.h
+333 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsbool.h
+334 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jscntxt.h
+335 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jscompat.h
+336 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jscpucfg.cpp
+337 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/js.mdp
+338 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jscntxt.cpp
+339 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jscpucfg.h
+340 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdate.cpp
+341 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdbgapi.cpp
+342 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsconfig.mk
+343 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdhash.cpp
+344 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdhash.h
+345 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdtoa.cpp
+346 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdbgapi.h
+347 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdtracef.h
+348 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdtracef.c
+349 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdtoa.h
+350 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsemit.h
+351 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsexn.cpp
+352 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsdate.h
+353 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsexn.h
+354 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsemit.cpp
+355 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsfile.cpp
+356 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsfile.msg
+357 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsfile.h
+358 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsfun.cpp
+359 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsgc.h
+360 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsfun.h
+361 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jshash.h
+362 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsify.pl
+363 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsinterp.cpp
+364 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsinterp.h
+365 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsgc.cpp
+366 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jshash.cpp
+367 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsinvoke.cpp
+368 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsiter.h
+369 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jskeyword.tbl
+370 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jslibmath.h
+371 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jslock.cpp
+372 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jslock.h
+373 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jskwgen.cpp
+374 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jslocko.asm
+375 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jslog2.cpp
+376 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jslong.cpp
+377 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jslong.h
+378 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsmath.cpp
+379 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsmath.h
+380 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsnum.h
+381 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsnum.cpp
+382 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsobj.cpp
+383 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsobj.h
+384 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/json.cpp
+385 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsiter.cpp
+386 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/json.h
+387 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsopcode.cpp
+388 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsopcode.h
+389 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsoplengen.cpp
+390 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsotypes.h
+391 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsOS240.def
+392 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsopcode.tbl
+393 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsparse.h
+394 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsproto.tbl
+395 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsprf.h
+396 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsparse.cpp
+397 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsprf.cpp
+398 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsprvtd.h
+399 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsregexp.h
+400 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsregexp.cpp
+401 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jspubtd.h
+402 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsscan.cpp
+403 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsreops.tbl
+404 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsscan.h
+405 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsscope.h
+406 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsscript.cpp
+407 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsshell.msg
+408 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsscope.cpp
+409 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsstr.cpp
+410 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsscript.h
+411 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsstaticcheck.h
+412 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsstddef.h
+413 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsstr.h
+414 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsutil.cpp
+415 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jstracer.h
+416 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsutil.h
+417 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jstracer.cpp
+418 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsversion.h
+419 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsxdrapi.cpp
+420 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsxml.h
+421 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsxdrapi.h
+422 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jsxml.cpp
+423 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/lock_SunOS.s
+424 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/jstypes.h
+425 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/plify_jsdhash.sed
+426 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/prmjtime.cpp
+427 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/README.html
+428 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/resource.h
+429 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/Makefile.ref
+430 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/rules.mk
+431 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/SpiderMonkey.rsp
+432 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/win32.order
+433 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/time.sh
+434 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/prmjtime.h
+435 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/editline/editline.3
+436 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/editline/README
+437 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/editline/Makefile.ref
+438 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/editline/editline.h
+439 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/editline/editline.c
+440 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/editline/sysunix.c
+441 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/editline/unix.h
+442 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/js-config.h.stamp
+443 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/js.exe
+444 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsapi.o
+445 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/js.o
+446 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsarray.o
+447 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsatom.o
+448 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsautocfg.h
+449 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsarena.o
+450 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsautokw.h
+451 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsbool.o
+452 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsautooplen.h
+453 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jscntxt.o
+454 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jscpucfg.o
+455 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsdate.o
+456 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsdbgapi.o
+457 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsdhash.o
+458 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsemit.o
+459 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsdtoa.o
+460 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsexn.o
+461 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsfun.o
+462 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jscpucfg.exe
+463 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsgc.o
+464 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jshash.o
+465 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/js-config.h
+466 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsinvoke.o
+467 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jslog2.o
+468 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jslock.o
+469 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jslong.o
+470 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsnum.o
+471 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsmath.o
+472 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsopcode.o
+473 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsinterp.o
+474 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsiter.o
+475 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/json.o
+476 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsoplengen.exe
+477 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsobj.o
+478 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsparse.o
+479 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jskwgen.exe
+480 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsregexp.o
+481 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsprf.o
+482 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsscan.o
+483 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsscript.o
+484 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsstr.o
+485 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsutil.o
+486 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsxdrapi.o
+487 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsxml.o
+488 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/libjs.a
+489 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/libjs.so
+490 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/prmjtime.o
+491 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/obj/jsscope.o
+492 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/AIX4.3.mk
+493 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/AIX4.1.mk
+494 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Cygwin.mk
+495 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/AIX4.2.mk
+496 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Darwin1.3.mk
+497 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Darwin5.2.mk
+498 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Darwin5.3.mk
+499 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Darwin.mk
+500 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Darwin64.mk
+501 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Darwin1.4.mk
+502 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/dgux.mk
+503 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/HP-UXB.10.20.mk
+504 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/IRIX6.1.mk
+505 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/IRIX5.3.mk
+506 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/IRIX.mk
+507 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/HP-UXB.11.00.mk
+508 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/IRIX6.2.mk
+509 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/HP-UXB.10.10.mk
+510 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/IRIX6.5.mk
+511 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Linux_All.mk
+512 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/Mac_OS10.0.mk
+513 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/MSYS.mk
+514 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS4.1.4.mk
+515 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.10.mk
+516 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/OSF1V4.0.mk
+517 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.3.mk
+518 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.4.mk
+519 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/IRIX6.3.mk
+520 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.5.1.mk
+521 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.6.mk
+522 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.7.mk
+523 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.8.mk
+524 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.9.mk
+525 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/WINNT4.0.mk
+526 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/WINNT5.0.mk
+527 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/WINNT5.1.mk
+528 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/OSF1V5.0.mk
+529 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/SunOS5.5.mk
+530 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/WINNT5.2.mk
+531 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/ref-config/WINNT6.0.mk
+532 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/autoconf.mk.in
+533 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/check-sync-exceptions
+534 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/fastcwd.pl
+535 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/insure.mk
+536 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/gcc_hidden.h
+537 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/make-system-wrappers.pl
+538 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/Makefile.in
+539 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/milestone.pl
+540 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/config.mk
+541 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/milestone.txt
+542 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/nfspwd.pl
+543 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/nsinstall.py
+544 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/pathsub.c
+545 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/pathsub.h
+546 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/preprocessor.pl
+547 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/revdepth-nt.pl
+548 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/revdepth.pl
+549 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/rules.mk
+550 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/system-headers
+551 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/version.mk
+552 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/nsinstall.c
+553 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/version_win.pl
+554 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/check-sync-dirs.py
+555 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/Moz/Milestone.pm
+556 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/cppsetup.c
+557 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/ifparser.h
+558 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/ifparser.c
+559 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/include.c
+560 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/Makefile.in
+561 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/main.c
+562 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/def.h
+563 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/parse.c
+564 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/pr.c
+565 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/mkdepend.man
+566 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/js/config/mkdepend/imakemdep.h
+567 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/asprintf.c
+568 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/charset.sh
+569 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/chunked.sh
+570 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/destination-is-existing-directory.expected.err
+571 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/common.sh
+572 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/destination-is-file.expected.err
+573 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/encoding-requires-argument.expected.err
+574 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/encodings.c
+575 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/encodings.sh
+576 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/exclude-requires-argument.expected.err
+577 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/gethostbyname.c
+578 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/help.sh
+579 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/gethostbyname.sh
+580 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/http-client-bad-body.c
+581 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/fatal.sh
+582 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/http-client-bad-url.c
+583 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/http-client-close-after-request.c
+584 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/http-server-bad-headers.c
+585 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/http-server-bad-body.c
+586 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/asprintf.sh
+587 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/http-server-charset.c
+588 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/http-server-chunked.c
+589 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/invalid-option.expected.err
+590 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/http-server-close-immediately.c
+591 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/invalid-option.sh
+592 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-ignore.sh
+593 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-invalid.expected.err
+594 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-setter.expected.err
+595 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-utf-8.sh
+596 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.sh
+597 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/json-cmp.js
+598 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/json.c
+599 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/json.sh
+600 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/Makefile
+601 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/Makefile.am
+602 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-xml.expected.err
+603 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/mkdirs.c
+604 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/mkdirs.sh
+605 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/Makefile.in
+606 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/netcat.pl
+607 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/no-instrument-requires-argument.expected.err
+608 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/no-arguments.expected.err
+609 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/proxy-bad-request-body.sh
+610 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/proxy-bad-response-body.expected.err
+611 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/proxy-bad-response-body.sh
+612 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/proxy-bad-response-headers.sh
+613 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/proxy-no-server.sh
+614 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/proxy-url.sh
+615 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/proxy.sh
+616 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive-dir-list.c
+617 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive-crlf.sh
+618 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive-dir-list.sh
+619 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive-exclude.sh
+620 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/no-arguments.sh
+621 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive-fatal.sh
+622 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.sh
+623 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/same-directory.expected.err
+624 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/same-directory.sh
+625 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/proxy-bad-response-body-javascript.sh
+626 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-bad-requests.sh
+627 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-close-after-request.sh
+628 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-directory-listing.sh
+629 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive-no-instrument.sh
+630 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-directory-listing.expected
+631 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-directory-redirect.sh
+632 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-encoded-url.sh
+633 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-error.sh
+634 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-content-types.sh
+635 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-ip-address.expected.out
+636 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-ip-address.sh
+637 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-shutdown.sh
+638 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-shutdown-bad-method.sh
+639 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-special-file.sh
+640 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-unreadable-directory.sh
+641 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-unreadable-file.sh
+642 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-verbose.expected.err
+643 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-version.sh
+644 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-verbose.sh
+645 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server.pl
+646 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-shutdown.expected.err
+647 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server-help.sh
+648 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/source-is-file.expected.err
+649 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/source-does-not-exist.expected.err
+650 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-bad-request-body.sh
+651 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-bad-response-headers.sh
+652 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-bad-source-urls.expected.json
+653 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/server.sh
+654 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-bad-json.sh
+655 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-escaped-characters.expected.json
+656 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-bad-source-urls.expected.err
+657 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-escaped-characters.json
+658 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-escaped-characters.js
+659 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-server-bad-body.sh
+660 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-source-not-found.expected.err
+661 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-source-not-found.expected.json
+662 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-source-not-found.json
+663 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-source-not-found.sh
+664 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-escaped-characters.sh
+665 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-source-urls.expected.err
+666 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-server-closes-immediately.sh
+667 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-unreachable-source-urls.expected.err
+668 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-unreadable-json.sh
+669 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store.expected.json
+670 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store.json
+671 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-source-urls.expected.json
+672 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-unreachable-source-urls.expected.json
+673 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store-unwritable-json.sh
+674 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/streams.sh
+675 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/store.sh
+676 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/too-many-arguments.expected.err
+677 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/verbose.expected.out
+678 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/version.sh
+679 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/valgrind.sh
+680 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/streams.c
+681 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-ignore.expected/ignore.js
+682 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/asprintf.Po
+683 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/encoding.Po
+684 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/gethostbyname.Po
+685 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/highlight.Po
+686 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-client-bad-body.Po
+687 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-client-bad-url.Po
+688 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-client-close-after-request.Po
+689 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-host.Po
+690 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-server-bad-body.Po
+691 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-server-bad-headers.Po
+692 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/encodings.Po
+693 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-server-chunked.Po
+694 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-server-close-immediately.Po
+695 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-url.Po
+696 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/mkdirs.Po
+697 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/instrument-js.Po
+698 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/resource-manager.Po
+699 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/recursive-dir-list.Po
+700 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/http-server-charset.Po
+701 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/stream.Po
+702 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/json.Po
+703 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/streams.Po
+704 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/.deps/util.Po
+705 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-setter/javascript-setter.js
+706 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-invalid/javascript-invalid.js
+707 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-utf-8/javascript-utf-8.js
+708 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-ignore/ignore.js
+709 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-xml/javascript-xml.js
+710 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript-utf-8.expected/javascript-utf-8.js
+711 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-assign.js
+712 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-array-comprehension.js
+713 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-colon.js
+714 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-cr.js
+715 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-crlf.js
+716 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-comma.js
+717 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-dec.js
+718 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-delete.js
+719 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-debugger.js
+720 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-do.js
+721 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-dot.js
+722 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-for.js
+723 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-empty.js
+724 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-foreach.js
+725 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-function.js
+726 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-generator-expression.js
+727 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-generator.js
+728 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-getter-setter.js
+729 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-hook.js
+730 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-if.js
+731 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-inc.js
+732 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-destructuring.js
+733 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-lambda.js
+734 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-lf.js
+735 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-let.js
+736 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-new.js
+737 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-number.js
+738 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-object.js
+739 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-op.js
+740 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-primary.js
+741 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-rb.js
+742 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-rc.js
+743 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-rp.js
+744 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-special-characters.js
+745 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-string.js
+746 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-iso-8859-1.js
+747 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-switch.js
+748 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-try.js
+749 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-in.js
+750 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-unaryop.js
+751 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-while.js
+752 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-var.js
+753 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-throw.js
+754 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript/javascript-with.js
+755 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-array-comprehension.js
+756 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-colon.js
+757 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-comma.js
+758 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-crlf.js
+759 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-debugger.js
+760 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-assign.js
+761 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-dec.js
+762 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-destructuring.js
+763 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-do.js
+764 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-dot.js
+765 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-empty.js
+766 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-delete.js
+767 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-foreach.js
+768 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-for.js
+769 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-generator-expression.js
+770 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-cr.js
+771 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-getter-setter.js
+772 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-function.js
+773 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-hook.js
+774 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-if.js
+775 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-inc.js
+776 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-iso-8859-1.js
+777 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-lambda.js
+778 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-let.js
+779 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-generator.js
+780 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-in.js
+781 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-object.js
+782 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-lf.js
+783 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-number.js
+784 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-op.js
+785 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-new.js
+786 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-rc.js
+787 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-rp.js
+788 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-string.js
+789 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-special-characters.js
+790 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-throw.js
+791 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-primary.js
+792 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-switch.js
+793 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-try.js
+794 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-unaryop.js
+795 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-var.js
+796 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-while.js
+797 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-rb.js
+798 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/javascript.expected/javascript-with.js
+799 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/script.js
+800 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/style.css
+801 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/unix.txt
+802 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/windows.txt
+803 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/x
+804 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/index.html
+805 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/image.png
+806 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/1/1.css
+807 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/1/1.js
+808 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/1/1.html
+809 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/1/2/2.css
+810 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/1/2/2.html
+811 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive/1/2/2.js
+812 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/index.html
+813 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/script.js
+814 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/style.css
+815 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/image.png
+816 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/unix.txt
+817 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/x
+818 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/windows.txt
+819 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/1/1.css
+820 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/1/1.html
+821 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/1/1.js
+822 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/1/2/2.css
+823 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/1/2/2.html
+824 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/tests/recursive.expected/1/2/2.js
+825 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/demo.html
+826 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/doc.css
+827 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/feed-icon-14x14.png
+828 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/faq.html
+829 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/index.html
+830 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/help.html
+831 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/license.html
+832 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/manual.html
+833 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/news.html
+834 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/reset-fonts-grids.css
+835 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/screenshot.png
+836 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/screenshot2.png
+837 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/screenshot3.png
+838 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/screenshot5.png
+839 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/screenshot4.png
+840 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/screenshot6.png
+841 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/screenshot7.png
+842 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/sh_html.min.js
+843 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/links.html
+844 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/siliconforks-16x16.png
+845 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/sh_nedit.min.css
+846 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/style.css
+847 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/users.html
+848 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/sh_javascript.min.js
+849 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/sh_main.min.js
+850 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-inverted/index.html
+851 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-inverted/script.js
+852 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented-inverted/index.html
+853 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented-inverted/jscoverage-highlight.css
+854 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented-inverted/jscoverage-ie.css
+855 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented-inverted/jscoverage.html
+856 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented-inverted/jscoverage-throbber.gif
+857 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented-inverted/jscoverage.css
+858 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented-inverted/script.js
+859 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented-inverted/jscoverage.js
+860 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example/index.html
+861 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example/script.js
+862 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented/index.html
+863 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented/jscoverage-ie.css
+864 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented/jscoverage-throbber.gif
+865 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented/jscoverage.css
+866 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented/jscoverage.js
+867 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented/jscoverage.html
+868 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented/script.js
+869 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/instrumented/jscoverage-highlight.css
+870 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/script.js
+871 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/test.html
+872 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/readme.txt
+873 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/testRunner.html
+874 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/licenses/JDOM_license.txt
+875 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/licenses/Jetty_license.html
+876 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/licenses/lgpl-2.1.txt
+877 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/licenses/mpl-tri-license-c.txt
+878 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/licenses/index.html
+879 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/licenses/gpl-2.txt
+880 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/licenses/MPL-1.1.txt
+881 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/licenses/mpl-tri-license-html.txt
+882 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/images/green.gif
+883 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/images/powerby-transparent.gif
+884 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/images/red.gif
+885 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/images/logo_jsunit.gif
+886 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/css/jsUnitStyle.css
+887 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/emptyPage.html
+888 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/jsUnitCore.js
+889 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/jsUnitTestManager.js
+890 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/jsUnitMockTimeout.js
+891 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/jsUnitTestSuite.js
+892 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/jsUnitTracer.js
+893 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/jsUnitVersionCheck.js
+894 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-counts-failures.html
+895 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-counts.html
+896 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-counts-runs.html
+897 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-counts-errors.html
+898 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-data.html
+899 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-errors.html
+900 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-frame.html
+901 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-loader.html
+902 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-progress.html
+903 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-results.html
+904 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/testContainer.html
+905 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/main-status.html
+906 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/testContainerController.html
+907 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/xbDebug.js
+908 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/css/jsUnitStyle.css
+909 silly gunzTarPerm extractEntry node_modules/qunit/deps/jscoverage/doc/example-jsunit/jsunit/app/css/readme
+910 verbose write writing to /usr/local/lib/node_modules/postman/package.json
+911 info preinstall postman@0.2.0
+912 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/postman/package.json
+913 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/postman/package.json
+914 silly install resolved []
+915 verbose about to build /usr/local/lib/node_modules/postman
+916 info build /usr/local/lib/node_modules/postman
+917 verbose targetResolver reading package data from /usr/local/lib/node_modules/postman/node_modules/coffee-script/package.json
+918 verbose targetResolver reading package data from /usr/local/lib/node_modules/postman/node_modules/colors/package.json
+919 verbose targetResolver reading package data from /usr/local/lib/node_modules/postman/node_modules/qunit/package.json
+920 verbose targetResolver reading package data from /usr/local/lib/node_modules/postman/node_modules/uglify-js/package.json
+921 info package.json coffee-script@1.1.1 No license field.
+922 info linkStuff postman@0.2.0
+923 silly linkStuff postman@0.2.0 has /usr/local/lib/node_modules as its parent node_modules
+924 silly linkStuff postman@0.2.0 is part of a global install
+925 silly linkStuff postman@0.2.0 is installed into a global node_modules
+926 silly linkStuff postman@0.2.0 is installed into the top-level global node_modules
+927 info package.json colors@0.5.0 No license field.
+928 info package.json qunit@0.1.5 No license field.
+929 info package.json uglify-js@1.0.6 No license field.
+930 verbose linkBins postman@0.2.0
+931 verbose linkMans postman@0.2.0
+932 verbose rebuildBundles postman@0.2.0
+933 verbose rebuildBundles [ 'coffee-script', 'colors', 'qunit', 'uglify-js' ]
+934 verbose rebuild bundle /usr/local/lib/node_modules/postman/node_modules/coffee-script
+935 info build /usr/local/lib/node_modules/postman/node_modules/coffee-script
+936 info preinstall coffee-script@1.1.1
+937 info linkStuff coffee-script@1.1.1
+938 silly linkStuff coffee-script@1.1.1 has /usr/local/lib/node_modules/postman/node_modules as its parent node_modules
+939 verbose linkBins coffee-script@1.1.1
+940 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+940 verbose link bins   '/usr/local/lib/node_modules/postman/node_modules/.bin',
+940 verbose link bins   false ]
+941 verbose linkMans coffee-script@1.1.1
+942 verbose rebuildBundles coffee-script@1.1.1
+943 silly gentlyRm /usr/local/lib/node_modules/postman/node_modules/.bin/coffee is being purged
+944 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/postman/node_modules/.bin/coffee
+945 silly gentlyRm /usr/local/lib/node_modules/postman/node_modules/.bin/cake is being purged
+946 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/postman/node_modules/.bin/cake
+947 info install coffee-script@1.1.1
+948 info postinstall coffee-script@1.1.1
+949 verbose rebuild bundle /usr/local/lib/node_modules/postman/node_modules/colors
+950 info build /usr/local/lib/node_modules/postman/node_modules/colors
+951 info preinstall colors@0.5.0
+952 info linkStuff colors@0.5.0
+953 silly linkStuff colors@0.5.0 has /usr/local/lib/node_modules/postman/node_modules as its parent node_modules
+954 verbose linkBins colors@0.5.0
+955 verbose linkMans colors@0.5.0
+956 verbose rebuildBundles colors@0.5.0
+957 info install colors@0.5.0
+958 info postinstall colors@0.5.0
+959 verbose rebuild bundle /usr/local/lib/node_modules/postman/node_modules/qunit
+960 info build /usr/local/lib/node_modules/postman/node_modules/qunit
+961 info preinstall qunit@0.1.5
+962 info linkStuff qunit@0.1.5
+963 silly linkStuff qunit@0.1.5 has /usr/local/lib/node_modules/postman/node_modules as its parent node_modules
+964 verbose linkBins qunit@0.1.5
+965 verbose link bins [ { qunit: './bin/cli.js' },
+965 verbose link bins   '/usr/local/lib/node_modules/postman/node_modules/.bin',
+965 verbose link bins   false ]
+966 verbose linkMans qunit@0.1.5
+967 verbose rebuildBundles qunit@0.1.5
+968 silly gentlyRm /usr/local/lib/node_modules/postman/node_modules/.bin/qunit is being purged
+969 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/postman/node_modules/.bin/qunit
+970 info install qunit@0.1.5
+971 verbose unsafe-perm in lifecycle true
+972 info qunit@0.1.5 Failed to exec install script
+973 verbose unlock done using /Users/nundy/.npm/_locks/postman-18fd0fe1a9b28de7.lock for /usr/local/lib/node_modules/postman
+974 verbose stack Error: qunit@0.1.5 install: `make install`
+974 verbose stack Exit status 2
+974 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+974 verbose stack     at emitTwo (events.js:100:13)
+974 verbose stack     at EventEmitter.emit (events.js:185:7)
+974 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+974 verbose stack     at emitTwo (events.js:100:13)
+974 verbose stack     at ChildProcess.emit (events.js:185:7)
+974 verbose stack     at maybeClose (internal/child_process.js:850:16)
+974 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+975 verbose pkgid qunit@0.1.5
+976 verbose cwd /Users/nundy/Documents/hackReactor/API-Hackathon/server
+977 error Darwin 15.0.0
+978 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "postman" "--save"
+979 error node v5.8.0
+980 error npm  v2.14.12
+981 error code ELIFECYCLE
+982 error qunit@0.1.5 install: `make install`
+982 error Exit status 2
+983 error Failed at the qunit@0.1.5 install script 'make install'.
+983 error This is most likely a problem with the qunit package,
+983 error not with npm itself.
+983 error Tell the author that this fails on your system:
+983 error     make install
+983 error You can get their info via:
+983 error     npm owner ls qunit
+983 error There is likely additional logging output above.
+984 verbose exit [ 1, true ]
+985 verbose unbuild lib/node_modules/postman
+986 info preuninstall postman@0.2.0
+987 info uninstall postman@0.2.0
+988 verbose unbuild rmStuff postman@0.2.0 from /usr/local/lib/node_modules
+989 info postuninstall postman@0.2.0
+990 silly gentlyRm /usr/local/lib/node_modules/postman is being purged from base /usr/local
+991 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/postman
+992 silly vacuum-fs purging /usr/local/lib/node_modules/postman
+993 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules

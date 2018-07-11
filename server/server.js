@@ -9,7 +9,10 @@ var characterData = require('../data/gameOfThrones');
 
 var characterRouter = require('./routers/characterRouter');
 
+
 var db = mongoose.connect(dbUri);
+
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
